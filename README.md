@@ -10,7 +10,25 @@
 | **强调色** | `#5b8fd6` |
 | **须要 hooks** | 是（`facets.client`）|
 
-> ⚠️ **本皮肤是衍生作品**。来源、授权与署名见下方「来源与授权」一节，**这是本提交的必要说明**。
+> ⚠️ **本皮肤是衍生作品**。来源、授权与署名见下方「来源与授权」一节，**这是本仓库的必要说明**。
+
+![橘雪莉工坊 · 深色主题](preview/dark.jpg)
+
+![橘雪莉工坊 · 浅色主题](preview/light.jpg)
+
+## 安装
+
+### 通过 DSH 市场（推荐）
+
+在 DSH Web 的 **设置 → 皮肤中心** 中从 [dsh-market.com](https://dsh-market.com) 安装「橘雪莉工坊」。市场安装器会写入 `dsh-market.provenance.json`，`hooks.mjs` 可正常加载，时段壁纸等效果完整。
+
+### 从本仓库手动安装
+
+1. 安装皮肤中心插件 `@linxin666/dsh-client-ui-skin-center`（0.4.x）。
+2. 下载本仓库，把仓库目录命名为 `sherry-atelier`，放到 `$DSH_HOME/skins/` 下（Windows 默认 `%USERPROFILE%\.dsh\skins\`），确保路径是 `.../skins/sherry-atelier/skin.json`。
+3. 刷新页面 → **设置 → 皮肤中心** → 应用「橘雪莉工坊」。
+
+> 手动安装的副本没有市场 provenance，皮肤中心会拒绝 `hooks.mjs`：玻璃配色与 `skin.css`/`patches.css` 仍生效，但按时段切换壁纸等 hooks 行为不会运行。需要完整效果请走市场安装。
 
 ---
 
