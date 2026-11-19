@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schemas.linxin666.org/dsh-skin/v2.json",
+  "skinManifestVersion": 2,
+  "id": "sherry-atelier",
+  "name": "橘雪莉工坊",
+  "nameEn": "Sherry Atelier",
+  "author": "橘雪莉",
+  "tagline": "蓝发少女 · 半透明玻璃界面",
+  "description": "以橘雪莉为形象的 DSH 界面皮肤：顶部与右侧栏为半透明深蓝玻璃，壁纸铺满整屏；按时段在踩水、咖啡、草坪三张场景之间切换。洞窟/金饰等旧装饰已移除，界面以半透明与清晰可读为先。",
+  "tags": [
+    "anime",
+    "sherry",
+    "blue",
+    "glass",
+    "translucent",
+    "wallpaper"
+  ],
+  "accent": "#5b8fd6",
+  "order": 14,
+  "version": "1.0.0",
+  "license": "CC BY-NC-SA 4.0",
+  "attribution": "衍生自 maid-atelier（Abyssal Maid Atelier / 深海女仆工坊）by Small-tailqwq，依 CC BY-NC-SA 4.0 修改并以相同许可发布。完整创作链：上善（鲸鱼娘形象原作）→ zipzip（女仆鲸鱼娘二创）→ Small-tailqwq（上游皮肤）→ 橘雪莉（本皮肤）。本皮肤使用的橘雪莉形象与场景壁纸由本皮肤作者提供。",
+  "preview": {
+    "light": "preview/light.jpg",
+    "dark": "preview/dark.jpg"
+  },
+  "requires": {
+    "contracts": [
+      {
+        "apiVersion": "x-org.linxin666.skin-center/v1alpha1",
+        "kind": "SkinHooks",
+        "optional": true
+      }
+    ]
+  },
+  "contributes": {
+    "stylesheet": "skin.css",
+    "patches": "patches.css",
+    "backgroundMedia": {
+      "light": {
+        "type": "image",
+        "src": "assets/sherry-scene-puddle.jpg"
+      },
+      "dark": {
+        "type": "image",
+        "src": "assets/sherry-scene-coffee.jpg"
+      }
+    }
+  },
+  "facets": {
+    "client": {
+      "entry": "hooks.mjs",
+      "apiVersion": "x-org.linxin666.skin-center/v1alpha1"
+    }
+  },
+  "licenseUrl": "https://github.com/Small-tailqwq/dsh-deep-whale/blob/main/maid-atelier/LICENSE",
+  "noticeUrl": "https://github.com/Small-tailqwq/dsh-deep-whale/blob/main/maid-atelier/NOTICE",
+  "sourceUrl": "https://github.com/Small-tailqwq/dsh-deep-whale/tree/main/maid-atelier"
+}
